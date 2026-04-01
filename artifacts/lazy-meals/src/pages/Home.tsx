@@ -162,8 +162,8 @@ export default function Home() {
                 </div>
                 
                 <FadeInUp delay={0.4}>
-                  <Button className="mt-10 rounded-full font-bold px-8 h-12" data-testid="explainer-learn-more">
-                    Learn the PIBO Method
+                  <Button className="mt-10 rounded-full font-bold px-8 h-12" asChild data-testid="explainer-learn-more">
+                    <a href="https://www.piboconsulting.com" target="_blank" rel="noopener noreferrer">Learn the PIBO Method</a>
                   </Button>
                 </FadeInUp>
               </div>
@@ -257,8 +257,8 @@ export default function Home() {
                         <span>Bonus: The complete affiliate strategy breakdown</span>
                       </li>
                     </ul>
-                    <Button size="lg" className="w-full sm:w-auto rounded-full h-14 px-10 text-lg font-bold" data-testid="buy-product-button">
-                      Download Now for $29
+                    <Button size="lg" className="w-full sm:w-auto rounded-full h-14 px-10 text-lg font-bold" asChild data-testid="buy-product-button">
+                      <a href="https://lazymeals.gumroad.com/l/lazy-recipe-pack" target="_blank" rel="noopener noreferrer">Download Now for $29</a>
                     </Button>
                   </FadeInUp>
                 </div>
@@ -286,14 +286,16 @@ export default function Home() {
                   desc: "Crispy meals in minutes with zero effort. The laziest way to cook — just toss it in and walk away.",
                   tag: "Top Pick",
                   price: "$79.99",
-                  icon: <Utensils className="h-8 w-8" />
+                  icon: <Utensils className="h-8 w-8" />,
+                  url: "https://www.amazon.com/s?k=best+air+fryer&tag=lazymeals-20"
                 },
                 {
                   title: "Meal Prep Kit",
                   desc: "Everything you need to prep a full week of meals in one hour on Sunday. Containers, planner, and guide included.",
                   tag: "Best Value",
                   price: "$34.99",
-                  icon: <ChefHat className="h-8 w-8" />
+                  icon: <ChefHat className="h-8 w-8" />,
+                  url: "https://www.amazon.com/s?k=meal+prep+containers+kit&tag=lazymeals-20"
                 }
               ].map((prod, i) => (
                 <FadeInUp key={i} delay={i * 0.1}>
@@ -314,8 +316,8 @@ export default function Home() {
                       <div className="mt-4 font-bold text-lg">{prod.price}</div>
                     </CardContent>
                     <CardFooter>
-                      <Button variant="outline" className="w-full rounded-full group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all" data-testid={`affiliate-button-${i}`}>
-                        View Product <ArrowRight className="ml-2 h-4 w-4" />
+                      <Button variant="outline" className="w-full rounded-full group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all" asChild data-testid={`affiliate-button-${i}`}>
+                        <a href={prod.url} target="_blank" rel="noopener noreferrer">View Product <ArrowRight className="ml-2 h-4 w-4" /></a>
                       </Button>
                     </CardFooter>
                   </Card>
@@ -437,9 +439,9 @@ export default function Home() {
             </div>
             
             <nav className="flex gap-6 text-sm">
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-white transition-colors">Affiliate Disclosure</a>
+              <a href="https://lazymeals.com/privacy" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Privacy Policy</a>
+              <a href="https://lazymeals.com/terms" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Terms of Service</a>
+              <a href="https://lazymeals.com/affiliate-disclosure" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Affiliate Disclosure</a>
             </nav>
           </div>
           
