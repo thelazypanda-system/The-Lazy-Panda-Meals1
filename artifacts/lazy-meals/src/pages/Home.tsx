@@ -163,7 +163,7 @@ export default function Home() {
                 
                 <FadeInUp delay={0.4}>
                   <Button className="mt-10 rounded-full font-bold px-8 h-12" asChild data-testid="explainer-learn-more">
-                    <a href="https://www.piboconsulting.com" target="_blank" rel="noopener noreferrer">Learn the PIBO Method</a>
+                    <a href="https://askpibo.com" target="_blank" rel="noopener noreferrer">Learn the PIBO Method</a>
                   </Button>
                 </FadeInUp>
               </div>
