@@ -279,28 +279,21 @@ export default function Home() {
               </FadeInUp>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
               {[
                 {
-                  title: "FreshPrep Meal Kits",
-                  desc: "Pre-chopped ingredients delivered. The ultimate lazy hack.",
+                  title: "Air Fryer",
+                  desc: "Crispy meals in minutes with zero effort. The laziest way to cook — just toss it in and walk away.",
                   tag: "Top Pick",
-                  price: "$60/week",
+                  price: "$79.99",
                   icon: <Utensils className="h-8 w-8" />
                 },
                 {
-                  title: "Ninja Chopper Pro",
-                  desc: "Stop chopping onions. Press a button and you're done.",
-                  tag: "Kitchen Gear",
-                  price: "$39.99",
+                  title: "Meal Prep Kit",
+                  desc: "Everything you need to prep a full week of meals in one hour on Sunday. Containers, planner, and guide included.",
+                  tag: "Best Value",
+                  price: "$34.99",
                   icon: <ChefHat className="h-8 w-8" />
-                },
-                {
-                  title: "InstaCook Multicooker",
-                  desc: "Throw frozen meat in, press button, eat 30 mins later.",
-                  tag: "Appliance",
-                  price: "$89.99",
-                  icon: <Timer className="h-8 w-8" />
                 }
               ].map((prod, i) => (
                 <FadeInUp key={i} delay={i * 0.1}>
