@@ -24,7 +24,16 @@ export default function Home() {
       {/* NAVBAR */}
       <header className="sticky top-0 z-50 w-full bg-black/95 backdrop-blur border-b border-white/10">
         <div className="max-w-5xl mx-auto px-5 h-16 flex items-center justify-between">
-          <span className="text-white font-bold text-lg tracking-tight">Lazy Meal System</span>
+          <div className="flex items-center gap-3">
+            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="19" cy="19" r="19" fill="#ea580c"/>
+              <text x="19" y="24" textAnchor="middle" fontFamily="serif" fontSize="16" fill="white" fontWeight="bold">怠</text>
+            </svg>
+            <div className="flex flex-col leading-none">
+              <span className="text-white font-bold text-base tracking-widest uppercase">Lazy Meal</span>
+              <span className="text-orange-400 text-[10px] tracking-[0.3em] uppercase font-medium">System</span>
+            </div>
+          </div>
           <Button asChild className="rounded-full bg-orange-500 hover:bg-orange-600 text-white font-bold px-6 h-10 shadow-md" data-testid="nav-cta">
             <a href={GUMROAD} target="_blank" rel="noopener noreferrer">Get Instant Access ($12)</a>
           </Button>
